@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html {
+	background-color: #111;
+	color: #fff;
+	padding: 0 20px;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+button {
+	background-color: #008cba;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px 0;
+	padding: 18px 32px;
+	outline: none !important;
+	&:hover {
+		background-color: #007ba1;
+	}
+}
+.scene {
+	margin: 20px 0;
+}
+.scene__layout {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.editor-wrapper {
+	position: relative;
+	height: 400px;
+}
+#editor { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#output {
+	background: #202020;
+	color: #E6E1DC;
+	min-height: 40px;
+	padding: 20px;
+}

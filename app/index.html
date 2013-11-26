@@ -10,8 +10,20 @@
 	<header>
 		<h1>Behold the Python Warrior</h1>
 	</header>
-	<div id="main" role="main">
-		<div class="editor-wrapper">
+	<div class="container" role="main">
+		<div class="scene">
+			<div class="scene__layout">
+				<img src="/images/Black-Knight-monty-python.jpg" alt="">
+			</div>
+			<div class="scene__message"></div>
+		</div>
+		<div class="controls grid">
+			<div class="tips grid__item one-half">
+				<h2>This is the section for tips</h2>
+				<p>Change the value of "cool_message" to 'I am an instance!'.</p>
+			</div><!--
+			--><div class="editor grid__item one-half">
+				<div class="editor-wrapper">
 <div id="editor">
 class MyClass:
 	def __init__(self):
@@ -23,11 +35,14 @@ class MyClass:
 my_object = MyClass()
 my_object.talk_bullshit()
 </div>
+				</div>
+				<button onclick="runit()" type="button">Run</button>
+				<pre id="output"></pre>
+			</div>
 		</div>
 	</div>
 	<footer>
-		<button onclick="runit()" type="button">Run</button>
-		<pre id="output"></pre>
+		
 	</footer>
 
 	<script src="/bower_components/jquery/jquery.min.js" type="text/javascript"></script>
