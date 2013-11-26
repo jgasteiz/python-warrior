@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Python Warrior</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<h1>Behold the Python Warrior</h1>
+	</header>
+	<div id="main" role="main">
+		<div class="editor-wrapper">
+<div id="editor">
+class MyClass:
+	def __init__(self):
+		self.cool_message = 'I am an object!'
+
+	def talk_bullshit(self):
+		print 'Hey yo, %s' % self.cool_message
+
+my_object = MyClass()
+my_object.talk_bullshit()
+</div>
+		</div>
+	</div>
+	<footer>
+		<button onclick="runit()" type="button">Run</button>
+		<pre id="output"></pre>
+	</footer>
+
+	<script src="/bower_components/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="/bower_components/skulpt/skulpt.min.js" type="text/javascript"></script>
+	<script src="/js/vendor/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
