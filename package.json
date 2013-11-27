@@ -10,7 +10,9 @@
     "grunt-cli": "~0.1.9",
     "grunt-contrib-sass": "~0.5.0",
     "grunt-concurrent": "~0.3.1",
-    "grunt-notify": "~0.2.13"
+    "grunt-notify": "~0.2.13",
+    "connect": "~2.11.0",
+    "grunt-contrib-copy": "~0.4.1"
   },
   "scripts": {},
   "repository": {
