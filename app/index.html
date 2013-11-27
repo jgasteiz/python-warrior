@@ -14,6 +14,7 @@
 		<div class="scene">
 			<div class="scene__layout">
 				<img src="/images/Black-Knight-monty-python.jpg" alt="">
+				<pre id="output"></pre>
 			</div>
 			<div class="scene__message"></div>
 		</div>
@@ -23,6 +24,7 @@
 				<p>Change the value of "cool_message" to 'I am an instance!'.</p>
 			</div><!--
 			--><div class="editor grid__item one-half">
+				<button onclick="runit()" type="button">Run</button>
 				<div class="editor-wrapper">
 <div id="editor">
 class MyClass:
@@ -36,8 +38,6 @@ my_object = MyClass()
 my_object.talk_bullshit()
 </div>
 				</div>
-				<button onclick="runit()" type="button">Run</button>
-				<pre id="output"></pre>
 			</div>
 		</div>
 	</div>
