@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "~1.10.2",
     "skulpt": "",
-    "backbone": "",
-    "underscore": ""
+    "angular": "~1.2.16",
+    "ace": "~1.1.3"
   }
 }

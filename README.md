@@ -11,7 +11,8 @@ The reason I'm building this is I want to experiment with web based code interpr
 - You'll need to have node installed globally.
 - Download or clone the code.
 - Run `bower install` and `npm install`
-- Run `npm app/server.js` and you should get it running.
+- Go into `app/bower_components/ace` and run `npm install && node ./Makefile.dryice.js`
+- Run `node app/server.js` and you should get it running.
 
 ## TODOS:
 

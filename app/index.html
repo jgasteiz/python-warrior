@@ -6,48 +6,38 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body ng-app="pythonWarrior">
 	<header>
 		<h1>Behold the Python Warrior</h1>
 	</header>
-	<div class="container" role="main">
+	<div class="container" role="main" ng-controller="MainCtrl">
 		<div class="scene">
 			<div class="scene__layout">
 				<img src="/images/Black-Knight-monty-python.jpg" alt="">
-				<pre id="output"></pre>
+				<pre class="output">{{output}}</pre>
 			</div>
 			<div class="scene__message"></div>
 		</div>
 		<div class="controls grid">
 			<div class="tips grid__item one-half">
-				<h2>This is the section for tips</h2>
-				<p>Change the value of "cool_message" to 'I am an instance!'.</p>
+				<h2>{{tipTitle}}</h2>
+				<p>{{tipMessage}}</p>
+				<pre>{{tipCode}}</pre>
 			</div><!--
 			--><div class="editor grid__item one-half">
-				<button onclick="runit()" type="button">Run</button>
-				<div class="editor-wrapper">
-<div id="editor">
-class MyClass:
-	def __init__(self):
-		self.cool_message = 'I am an object!'
-
-	def talk_bullshit(self):
-		print 'Hey yo, %s' % self.cool_message
-
-my_object = MyClass()
-my_object.talk_bullshit()
-</div>
-				</div>
+				<div editor output="output"></div>
 			</div>
 		</div>
 	</div>
-	<footer>Copyright © 2013 - Javi Manzano</footer>
+	<footer>Copyright © 2014 - Javi Manzano</footer>
 
-	<script src="/js/vendor/jquery/jquery.min.js" type="text/javascript"></script>
-	<script src="/js/vendor/skulpt/skulpt.min.js" type="text/javascript"></script>
-	<script src="/js/vendor/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/vendor/underscore/underscore-min.js" type="text/javascript"></script>
-	<script src="/js/vendor/backbone/backbone-min.js" type="text/javascript"></script>
-	<script src="/js/main.js"></script>
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/skulpt/skulpt.min.js"></script>
+	<script src="bower_components/ace/build/src/ace.js"></script>
+
+	<script src="bower_components/angular/angular.js"></script>
+
+
+	<script src="js/main.js"></script>
 </body>
 </html>

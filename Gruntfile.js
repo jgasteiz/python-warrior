@@ -34,55 +34,6 @@ module.exports = function(grunt) {
 					logConcurrentOutput: true
 				}
 			}
-		},
-		copy: {
-			main: {
-				files: [
-					// jQuery
-					{
-						expand: true,
-						src: [
-							'bower_components/jquery/*.min.js',
-							'bower_components/jquery/*.min.map'
-						],
-						dest: 'app/js/vendor/jquery',
-						flatten: true,
-						filter: 'isFile'
-					},
-					// Underscore
-					{
-						expand: true,
-						src: [
-							'bower_components/underscore/*-min.js',
-							'bower_components/underscore/*-min.map'
-						],
-						dest: 'app/js/vendor/underscore',
-						flatten: true,
-						filter: 'isFile'
-					},
-					// Backbone
-					{
-						expand: true,
-						src: [
-							'bower_components/backbone/*-min.js',
-							'bower_components/backbone/*-min.map'
-						],
-						dest: 'app/js/vendor/backbone',
-						flatten: true,
-						filter: 'isFile'
-					},
-					// Skulpt
-					{
-						expand: true,
-						src: [
-							'bower_components/skulpt/*.min.js'
-						],
-						dest: 'app/js/vendor/skulpt',
-						flatten: true,
-						filter: 'isFile'
-					}
-				]
-			}
 		}
 	});
 
