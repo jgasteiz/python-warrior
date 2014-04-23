@@ -14,7 +14,8 @@
 		<div class="scene">
 			<div class="scene__layout">
 				<img src="/images/Black-Knight-monty-python.jpg" alt="">
-				<pre class="output">{{output}}</pre>
+				<pre ng-hide="outputErr" class="output">{{output}}</pre>
+				<pre ng-show="outputErr" class="output">{{outputErr}}</pre>
 			</div>
 			<div class="scene__message"></div>
 		</div>
@@ -25,12 +26,17 @@
 				<pre>{{tipCode}}</pre>
 			</div><!--
 			--><div class="editor grid__item one-half">
-				<div editor output="output"></div>
+				<button ng-hide="showContinue" ng-click="runCode()" class="button-blue">Run</button>
+				<button ng-show="showContinue" ng-click="nextChallenge()" class="button-green">Continue</button>
+				<div class="editor-wrapper">
+					<div id="editor"># Write your code below\n</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<footer>Copyright © 2014 - Javi Manzano</footer>
 
+	<script src="bower_components/lodash/dist/lodash.min.js"></script>
 	<script src="bower_components/jquery/jquery.min.js"></script>
 	<script src="bower_components/skulpt/skulpt.min.js"></script>
 	<script src="bower_components/ace/build/src/ace.js"></script>

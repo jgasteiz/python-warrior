@@ -14,8 +14,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
-button {
-	background-color: #008cba;
+
+%button {
 	border: none;
 	color: #fff;
 	cursor: pointer;
@@ -23,31 +23,49 @@ button {
 	margin: 10px 0;
 	padding: 18px 32px;
 	outline: none !important;
+}
+
+.button-blue {
+	@extend %button;
+	background-color: #008cba;
 	&:hover {
 		background-color: #007ba1;
 	}
 }
+
+.button-green {
+	@extend %button;
+	background-color: #00ba8c;
+	&:hover {
+		background-color: #00a17b;
+	}
+}
+
 .scene {
 	margin: 20px 0;
 }
+
 .scene__layout {
 	img {
 		display: block;
 		margin: 0 auto;
 	}
 }
+
 .editor-wrapper {
 	position: relative;
 	height: 400px;
 }
-#editor { 
+
+#editor {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
-#output {
+
+.output {
 	background: #202020;
 	color: #E6E1DC;
 	min-height: 40px;

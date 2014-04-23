@@ -39,9 +39,8 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-notify');
 
-	grunt.registerTask('default', ['copy', 'sass:dev', 'concurrent:watch']);
+	grunt.registerTask('default', ['sass:dev', 'concurrent:watch']);
 };
